@@ -1,0 +1,203 @@
+:root {
+    --whitecolor: white;
+    --bannerBackgroundGrey: rgb(60, 63, 70);
+    --backgroundTurquoise: turquoise;
+    --generalPadding: 25px;
+    --halfPadding: 12px;
+    --doublePadding: 50px;
+    --darkBlueText: rgba(18, 18, 138, 0.788);
+}
+
+html {
+    font-size: 16px;
+    font-family: verdana, arial;
+    color:rgb(155, 153, 167);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--whitecolor);
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: var(--bannerBackgroundGrey);
+    height: 100px;
+    width: 100vw;
+}
+
+header h1 {
+    background-color: var(--backgroundTurquoise);
+    color: var(--bannerBackgroundGrey);
+    padding-left: var(--generalPadding);
+    margin-top: 20px;
+}
+
+header li {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: var(--backgroundTurquoise) solid 5px;
+    color: var(--backgroundTurquoise);
+    background-color: var(--bannerBackgroundGrey);
+}
+
+nav {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    right: 30px;
+    color: var(--whitecolor);
+    font-size: 1.2rem;
+}
+
+/* Banner & About Me Section -------------------------------------------- */
+
+/* The banner image as a hero class */
+.hero {
+    height: 300px;
+    width: 100vw;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutMeH2 {
+    color: var(--darkBlueText);
+    font-size: 3rem;
+    text-align: right;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 5rem;
+    border-right: solid 5px var(--darkBlueText);
+    padding-right: 1rem;
+    margin-left:
+}
+
+
+.mainH2 {
+    color: var(--darkBlueText);
+    font-size: 3rem;
+    text-align: right;
+    width: 200px;
+    height: 1000px;
+    margin-left: 200px;
+    margin-top: 5rem;
+    border-right: solid 5px var(--darkBlueText);
+    padding-right: 1rem;
+    margin-left:
+}
+.aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: left;
+    width: 100%;
+}
+
+.aboutMeContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 60%;
+}
+
+
+.mainParagraph {
+    color: var(--darkBlueText);
+    padding: var(--generalPadding);
+    width: 60%;
+    margin-top: var(--generalPadding);
+}
+
+.bottomRight {
+    position: absolute;
+    top: 300px;
+    right: var(--generalPadding);
+    font-size: 1.25rem;
+    height: 2rem;
+    width: 200px;
+    background-color: var(--backgroundTurquoise);
+    color: var(--bannerBackgroundGrey);
+  }
+
+
+/* Work Section ------------------------------------------------ */
+
+.workSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: left;
+    width: 100vw;
+
+}
+
+  /* Bottom left text */
+.bottomLeft {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -100px;
+    margin-bottom: var(--generalPadding);
+    padding-left: var(--generalPadding);
+    margin-left: 5px;
+    background-color: var(--backgroundTurquoise);
+    color: var(--darkBlueText);
+  }
+
+.bottomLeft strong {
+    font-size: 1.5rem;
+}
+
+.workDisplaySection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin-left: var(--generalPadding);
+}
+
+.fullWidthDiv {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 450px;
+    width: 1250px;
+    margin: var(--generalPadding);
+}
+
+.fullWidthDiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: var(--doublePadding);
+    border: solid 5px var(--backgroundTurquoise);
+}
+
+.halfWidthDiv {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 200px;
+    width: 600px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: var(--doublePadding);
+}
+
+.halfWidthDiv img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: solid 5px var(--backgroundTurquoise);
+    margin-top: 0px;
+}
+
