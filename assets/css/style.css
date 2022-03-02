@@ -6,15 +6,20 @@
     --halfPadding: 12px;
     --doublePadding: 50px;
     --darkBlueText: rgba(18, 18, 138, 0.788);
+    --tileWidth: 33%;
+    --tileHeight: 450px;
+    --doubleTileWidth: 100%;
+    --paddingLeftH2: 2%;
+    --paddingRightH2: 50px;
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
     font-family: verdana, arial;
-    color:rgb(155, 153, 167);
     width: 100%;
     margin: 0px;
     padding: 0px;
+    background-color: rgb(231, 228, 228);
 }
 
 header {
@@ -29,6 +34,7 @@ header {
     height: 100px;
     width: 100vw;
 }
+
 
 header h1 {
     background-color: var(--backgroundTurquoise);
@@ -45,16 +51,27 @@ header li {
     background-color: var(--bannerBackgroundGrey);
 }
 
+header a {
+    text-decoration: none;
+    color: var(--backgroundTurquoise);
+    background-color: var(--bannerBackgroundGrey);
+}
+
 nav {
     display: inline-block;
-    text-align: left;
     position: relative;
-    right: 30px;
+    right: var(--doublePadding);
     color: var(--whitecolor);
     font-size: 1.2rem;
 }
 
-/* Banner & About Me Section -------------------------------------------- */
+
+footer {
+    margin-top: var(--doublePadding);
+    text-align: center;
+}
+
+
 
 /* The banner image as a hero class */
 .hero {
@@ -65,54 +82,29 @@ nav {
     background-position: center;
 }
 
+body, .maindiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* About Me Section -------------------------------------------- */
 .aboutMeH2 {
     color: var(--darkBlueText);
-    font-size: 3rem;
+    font-size: 1.75rem;
     text-align: right;
-    width: 200px;
-    margin-left: 200px;
-    margin-top: 5rem;
+    width: 10%;
+    padding-left: var(--paddingLeftH2);
+    margin-top: 2rem;
     border-right: solid 5px var(--darkBlueText);
-    padding-right: 1rem;
-    margin-left:
+    padding-right: var(--paddingRightH2);
 }
-
-
-.mainH2 {
-    color: var(--darkBlueText);
-    font-size: 3rem;
-    text-align: right;
-    width: 200px;
-    height: 1000px;
-    margin-left: 200px;
-    margin-top: 5rem;
-    border-right: solid 5px var(--darkBlueText);
-    padding-right: 1rem;
-    margin-left:
-}
-.aboutMe {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    justify-content: left;
-    width: 100%;
-}
-
-.aboutMeContent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 60%;
-}
-
 
 .mainParagraph {
     color: var(--darkBlueText);
     padding: var(--generalPadding);
     width: 60%;
     margin-top: var(--generalPadding);
+    font-size: 1.25rem;
 }
 
 .bottomRight {
@@ -121,7 +113,7 @@ nav {
     right: var(--generalPadding);
     font-size: 1.25rem;
     height: 2rem;
-    width: 200px;
+    width: 300px;
     background-color: var(--backgroundTurquoise);
     color: var(--bannerBackgroundGrey);
   }
@@ -129,36 +121,61 @@ nav {
 
 /* Work Section ------------------------------------------------ */
 
-.workSection {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    justify-content: left;
-    width: 100vw;
-
+.mainH2 {
+    color: var(--darkBlueText);
+    font-size: 1.75rem;
+    text-align: right;
+    width: 10%;
+    height: 60vw;
+    padding-left: var(--paddingLeftH2);
+    margin-top: 5rem;
+    border-right: solid 5px var(--darkBlueText);
+    padding-right: var(--paddingRightH2);
 }
 
-  /* Bottom left text */
+.mainSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100vw;
+    margin-top: var(--generalPadding);
+    margin-bottom: var(--generalPadding)
+}
+
 .bottomLeft {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: -100px;
-    margin-bottom: var(--generalPadding);
+    margin-bottom: 70px;
     padding-left: var(--generalPadding);
+    padding-right: var(--halfPadding);
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-left: 5px;
     background-color: var(--backgroundTurquoise);
     color: var(--darkBlueText);
+    width: 300px;
+    position: relative;
+    z-index: 3;
+
   }
 
 .bottomLeft strong {
     font-size: 1.5rem;
+
+}
+
+.bottomLeft span {
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 .workDisplaySection {
     display: flex;
     flex-wrap: wrap;
-    width: 70vw;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 69vw;
     margin-left: var(--generalPadding);
 }
 
@@ -166,8 +183,8 @@ nav {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 450px;
-    width: 1250px;
+    text-decoration: none;
+    width: 69vw;
     margin: var(--generalPadding);
 }
 
@@ -177,27 +194,109 @@ nav {
     object-fit: cover;
     margin-top: var(--doublePadding);
     border: solid 5px var(--backgroundTurquoise);
+    margin-bottom: 0px;
 }
+
 
 .halfWidthDiv {
     display:flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    height: 200px;
-    width: 600px;
+    height: 225px;
+    width: 49%;
     margin-left: 0px;
     padding-left: 0px;
     margin-right: 0px;
     padding-right: 0px;
+    margin-top: var(--generalPadding);
+    margin-bottom: 0px;
+}
+
+.halfWidthDiv a {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    text-decoration: none;
     margin-top: 0px;
-    margin-bottom: var(--doublePadding);
+    margin-bottom: 0px;
 }
 
 .halfWidthDiv img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: solid 5px var(--backgroundTurquoise);
     margin-top: 0px;
+    margin-bottom: 0px;
+    border: solid 5px var(--backgroundTurquoise);
 }
+
+.halfWidthDiv img:hover {
+    opacity: .65;
+}
+
+.halfWidthDiv:hover {
+    transform: scale(1.02);
+}
+
+.fullWidthDiv img:hover {
+    opacity: .65;
+}
+
+.fullWidthDiv:hover {
+    transform: scale(1.01);
+}
+
+/* Contact Section ------------------------------------------------ */
+
+.fullWidthDivContact {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;
+    width: 69vw;
+    align-items: center;
+}
+
+
+.fullWidthDivContact li {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Media Queries for Small Screens */
+
+@media only screen and (max-width: 895px) {
+    .aboutMeH2, .mainH2 {
+        border-right: none;
+        margin: 0px;
+        padding: 0px;
+        height: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 895px) {
+    .mainSection, .workDisplaySection, .fullWidthDiv {
+        flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 895px) {
+    p, main, .maindiv, .mainParagraph, .fullWidthDiv, .halfWidthDiv, .halfWidthDiv img, .workDisplaySection img {
+        width: 80vw;
+        align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 895px) {
+    h1, .mainH2, .aboutMeH2 {
+        font-size: 2rem;
+    }
+  }
 

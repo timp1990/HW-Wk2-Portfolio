@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,19 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio TJP</title>
 </head>
+
 <body>
     <header>
         <h1>My Portfolio</h1>
         <div>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Work</li>
-                    <li>Contact Me</li>
-                    <li>Resume</li>
+                    <li> <a href="#aboutMeSection">About Me</a></li>
+                    <li><a href="#workSection">Work</a></li>
+                    <li><a href="#contactSection">Contact Me</a></li>
+                    <li><a
+                            href="https://docs.google.com/document/d/1Paubk9ITOn2BVO14hvenIoLM5hRv8syY/edit?usp=sharing&ouid=103438086529795550959&rtpof=true&sd=true">Resume</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -26,79 +30,131 @@
     </div>
 
     <main>
+        <div class="mainDiv">
 
-        <section class="aboutMe">
-            <h2 class="aboutMeH2">About Me</h2>
-            <div class="aboutMeContent">
-                <p class="mainParagraph"> Hi, I'm Tim. I'm an award winning Civil and Structural Design Engineer with previous experience in both the public and private sectors. 
-                    With 8 years experience, I have designed bridges, roads, houses, subdivisions, dams, retaining walls and more. <br>
-                    Most recently I have enrolled in the USYD-Trilogy Coding Bootcamp, to learn the basics of web development. 
-                <div>
-                    <img id="headshot" src="./assets/images/IPWEA Photo.png"/>
+            <section id="aboutMeSection">
+                <div class="mainSection">
+                    <h2 class="aboutMeH2">About Me</h2>
+                    <div class="workDisplaySection">
+
+                        <p class=" mainParagraph"> Hi, I'm Tim. I'm an award winning Civil and Structural Design
+                            Engineer
+                            with previous experience in both the public and private sectors.
+                            <br>
+                            With 8 years experience, I have designed bridges, roads, houses, subdivisions, dams,
+                            retaining
+                            walls and more. <br>
+                            Most recently I have enrolled in the USYD-Trilogy Coding Bootcamp, to learn the basics of
+                            web
+                            development.
+                        </p>
+
+                        <img src="./assets/images/IPWEA Photo.png" />
+
+                    </div>
                 </div>
-            </div>
-            
+            </section>
+            <br>
+
+            <section id="workSection">
+                <div class="mainSection">
+                    <h2 class="mainH2">Work</h2>
+
+                    <div class="workDisplaySection">
+                        <!-- Lanes Bridge -->
+                        <div class="fullWidthDiv">
+                            <a
+                                href="https://www.nbnnews.com.au/2019/08/20/ribbon-cutting-marks-official-opening-of-new-lanes-bridge/">
+                                <img src="./assets/images/lanesBridge.jpg" />
+                                <div class="bottomLeft">
+                                    <strong class="bottomLeftStrong">Lanes Bridge</strong>
+                                    <br>
+                                    <span>Bowraville</span>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <!-- Other Projects -->
+                        <div class="fullWidthDiv">
+                            <div class="halfWidthDiv">
+                                <a
+                                    href="https://www.nbnnews.com.au/2020/06/17/largest-mobile-crane-used-in-bridge-build-at-tamban/">
+                                    <img src="./assets/images/Fischers Aerial.JPG" />
+                                    <div class="bottomLeft">
+                                        <strong>Fischers Bridge</strong>
+                                        <br>
+                                        <span>Tamban</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="halfWidthDiv">
+                                <a
+                                    href="https://www.nbnnews.com.au/2019/06/22/new-jetty-walk-for-nambucca-heads-as-infrastructure-spend-continues/">
+                                    <img src="./assets/images/nambucca boardwalk.JPG" />
+                                    <div class="bottomLeft">
+                                        <strong>Boardwalk</strong>
+                                        <br>
+                                        <span>Nambucca</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="halfWidthDiv">
+                                <a
+                                    href="https://www.google.com/maps/place/3+Nyora+Cl,+Coffs+Harbour+NSW+2450/@-30.3052227,153.1065517,18.87z/data=!4m5!3m4!1s0x6b9c0e0af710ed7b:0x79cf4433a5d46d1b!8m2!3d-30.3052845!4d153.1068923">
+                                    <img src="./assets/images/3a nyora.jpg" />
+                                    <div class="bottomLeft">
+                                        <strong>Residence</strong>
+                                        <br>
+                                        <span>3a Nyora Cl</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="halfWidthDiv">
+                                <a
+                                    href=" https://www.google.com/maps/place/3+Nyora+Cl,+Coffs+Harbour+NSW+2450/@-30.3052227,153.1065517,18.87z/data=!4m5!3m4!1s0x6b9c0e0af710ed7b:0x79cf4433a5d46d1b!8m2!3d-30.3052845!4d153.1068923">
+                                    <img src="./assets/images/3b Nyora Close Photo.JPG" />
+                                    <div class="bottomLeft">
+                                        <strong>Residence</strong>
+                                        <br>
+                                        <span>3b Nyora Cl</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+        </div>
         </section>
         <br>
-        
-        <section>
-            <div class="workSection">
-                <h2 class="mainH2">Work</h2>
 
-                <div class="workDisplaySection">
-                    <!-- Lanes Bridge -->
-                    <div class="fullWidthDiv">
-                        <img src="./assets/images/lanesBridge.jpg"/>
-                        <div class="bottomLeft">
-                            <strong class="bottomLeftStrong">Lanes Bridge</strong>
-                            <br>
-                            <span>Nambucca Valley Council</span>
-                        </div>
-
+        <section id="contactSection">
+            <div class="mainSection">
+                <h2 class="aboutMeH2">Contact Me</h2>
+                <ul>
+                    <div class="fullWidthDivContact">
+                        <li>0449 646 713</li>
+                        <li>tim@nambuccaeng.com</li>
+                        <li><a href="https://www.nambuccaeng.com/">nambuccaeng.com</a></li>
+                        <li><a href="https://github.com/timp1990/">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/tim-polo-042ab11bb/">LinkedIn</a></li>
                     </div>
-                    <!-- Other Projects -->
-                    <div class="fullWidthDiv">
-                        <div class="halfWidthDiv">
-                            <img src="./assets/images/lanesBridge.jpg"/>
-                            <div  class="bottomLeft">
-                                <strong>Lanes Bridge</strong>
-                                <br>
-                                <span>Nambucca Valley Council</span>
-                            </div>                            
-                        </div>
-                        <div class="halfWidthDiv">
-                            <img src="./assets/images/lanesBridge.jpg"/>
-                            <div  class="bottomLeft">
-                                <strong>Lanes Bridge</strong>
-                                <br>
-                                <span>Nambucca Valley Council</span>
-                            </div>
-                        </div>
-                        <div class="halfWidthDiv">
-                            <img src="./assets/images/lanesBridge.jpg"/>
-                            <div  class="bottomLeft">
-                                <strong>Lanes Bridge</strong>
-                                <br>
-                                <span>Nambucca Valley Council</span>
-                            </div>
-                        </div>   
-                        <div class="halfWidthDiv">
-                            <img src="./assets/images/lanesBridge.jpg"/>
-                            <div  class="bottomLeft">
-                                <strong>Lanes Bridge</strong>
-                                <br>
-                                <span>Nambucca Valley Council</span>
-                            </div>
-                        </div>                               
-                    </div>
-                </div>
+                </ul>
             </div>
-            
         </section>
+        </div>
 
     </main>
+    <br>
 
-
-    
 </body>
+
 </html>
