@@ -1,8 +1,5 @@
 # HW-Wk2-Portfolio
 Homework Activity Week 2 - Advanced CSS Portfolio
-
-# HW-Wk1-CodeRefactor
-Homework Week 1 - Code Refactor
 # <My-Portfolio>
 
 ## Site Link
