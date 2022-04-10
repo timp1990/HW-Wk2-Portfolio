@@ -1,7 +1,8 @@
 :root {
     --whitecolor: white;
     --bannerBackgroundGrey: rgb(60, 63, 70);
-    --backgroundTurquoise: turquoise;
+    --mainBackgroundGrey: rgba(60, 63, 70, 0.911);
+    --lightColour: rgb(223, 229, 228);
     --generalPadding: 25px;
     --halfPadding: 12px;
     --doublePadding: 50px;
@@ -14,12 +15,10 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 20px;
     font-family: verdana, arial;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(231, 228, 228);
+    background-color: var(--mainBackgroundGrey);
 }
 
 header {
@@ -37,23 +36,31 @@ header {
 
 
 header h1 {
-    background-color: var(--backgroundTurquoise);
-    color: var(--bannerBackgroundGrey);
+    display: inline-block;
+    padding: 10px;
     padding-left: var(--generalPadding);
-    margin-top: 20px;
+    color: var(--lightColour);
+    background-color: var(--bannerBackgroundGrey);
+    width: 210px;
+    text-align: center;
+    border-bottom: solid 5px;
 }
 
 header li {
     display: inline-block;
     padding: 10px;
-    border-bottom: var(--backgroundTurquoise) solid 5px;
-    color: var(--backgroundTurquoise);
+    margin-top: 25px;
+    color: var(--lightColour);
     background-color: var(--bannerBackgroundGrey);
+    border: solid 5px;
+    border-radius: 25px;
+    width: 110px;
+    text-align: center;
 }
 
 header a {
     text-decoration: none;
-    color: var(--backgroundTurquoise);
+    color: var(--lightColour);
     background-color: var(--bannerBackgroundGrey);
 }
 
@@ -71,6 +78,14 @@ footer {
     text-align: center;
 }
 
+img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
 
 
 /* The banner image as a hero class */
@@ -82,221 +97,40 @@ footer {
     background-position: center;
 }
 
-body, .maindiv {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-/* About Me Section -------------------------------------------- */
-.aboutMeH2 {
-    color: var(--darkBlueText);
-    font-size: 1.75rem;
-    text-align: right;
-    width: 10%;
-    padding-left: var(--paddingLeftH2);
-    margin-top: 2rem;
-    border-right: solid 5px var(--darkBlueText);
-    padding-right: var(--paddingRightH2);
-}
-
-.mainParagraph {
-    color: var(--darkBlueText);
-    padding: var(--generalPadding);
-    width: 60%;
-    margin-top: var(--generalPadding);
-    font-size: 1.25rem;
-}
-
-.bottomRight {
+.nameClass {
     position: absolute;
-    top: 300px;
-    right: var(--generalPadding);
+    top: 125px;
+    left: 0px;
     font-size: 1.25rem;
-    height: 2rem;
-    width: 300px;
-    background-color: var(--backgroundTurquoise);
-    color: var(--bannerBackgroundGrey);
-  }
-
-
-/* Work Section ------------------------------------------------ */
-
-.mainH2 {
-    color: var(--darkBlueText);
-    font-size: 1.75rem;
-    text-align: right;
-    width: 10%;
-    height: 60vw;
-    padding-left: var(--paddingLeftH2);
-    margin-top: 5rem;
-    border-right: solid 5px var(--darkBlueText);
-    padding-right: var(--paddingRightH2);
-}
-
-.mainSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    width: 100vw;
-    margin-top: var(--generalPadding);
-    margin-bottom: var(--generalPadding)
-}
-
-.bottomLeft {
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: -100px;
-    margin-bottom: 70px;
+    height: 3rem;
+    width: 250px;
+    background-color: var(--bannerBackgroundGrey);
+    color: var(--lightColour);
     padding-left: var(--generalPadding);
-    padding-right: var(--halfPadding);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 5px;
-    background-color: var(--backgroundTurquoise);
-    color: var(--darkBlueText);
-    width: 300px;
-    position: relative;
-    z-index: 3;
-
-  }
-
-.bottomLeft strong {
-    font-size: 1.5rem;
-
+    padding-top: 0.5rem
 }
 
-.bottomLeft span {
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.workDisplaySection {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 69vw;
-    margin-left: var(--generalPadding);
-}
-
-.fullWidthDiv {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-decoration: none;
-    width: 69vw;
-    margin: var(--generalPadding);
-}
-
-.fullWidthDiv img {
-    height: 100%;
+.mainDiv {
+    background-color: var(--mainBackgroundGrey);
     width: 100%;
-    object-fit: cover;
-    margin-top: var(--doublePadding);
-    border: solid 5px var(--backgroundTurquoise);
-    margin-bottom: 0px;
 }
 
-
-.halfWidthDiv {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    height: 225px;
-    width: 49%;
-    margin-left: 0px;
-    padding-left: 0px;
-    margin-right: 0px;
-    padding-right: 0px;
-    margin-top: var(--generalPadding);
-    margin-bottom: 0px;
+.customBorder {
+    border: solid 5px var(--lightColour);
+    border-radius: 25px;
 }
 
-.halfWidthDiv a {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    text-decoration: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.customBorderR {
+    border: solid 5px var(--lightColour);
+    border-radius: 0px 20px 20px 0px;
 }
 
-.halfWidthDiv img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: solid 5px var(--backgroundTurquoise);
+.customBorderL {
+    border: solid 5px var(--lightColour);
+    border-radius: 20px 0px 0px 20px;
 }
 
-.halfWidthDiv img:hover {
-    opacity: .65;
+.contactli {
+    list-style-type: none;
 }
-
-.halfWidthDiv:hover {
-    transform: scale(1.02);
-}
-
-.fullWidthDiv img:hover {
-    opacity: .65;
-}
-
-.fullWidthDiv:hover {
-    transform: scale(1.01);
-}
-
-/* Contact Section ------------------------------------------------ */
-
-.fullWidthDivContact {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 200px;
-    width: 69vw;
-    align-items: center;
-}
-
-
-.fullWidthDivContact li {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 1rem;
-    padding: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-/* Media Queries for Small Screens */
-
-@media only screen and (max-width: 895px) {
-    .aboutMeH2, .mainH2 {
-        border-right: none;
-        margin: 0px;
-        padding: 0px;
-        height: 100px;
-    }
-  }
-
-  @media only screen and (max-width: 895px) {
-    .mainSection, .workDisplaySection, .fullWidthDiv {
-        flex-direction: column;
-    }
-  }
-
-  @media only screen and (max-width: 895px) {
-    p, main, .maindiv, .mainParagraph, .fullWidthDiv, .halfWidthDiv, .halfWidthDiv img, .workDisplaySection img {
-        width: 80vw;
-        align-items: center;
-    }
-  }
-
-  @media only screen and (max-width: 895px) {
-    h1, .mainH2, .aboutMeH2 {
-        font-size: 2rem;
-    }
-  }
-

@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio TJP</title>
 </head>
 
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Portfolio</h1>
         <div>
             <nav>
                 <ul>
-                    <li> <a href="#aboutMeSection">About Me</a></li>
+                    <li> <a href="#aboutMeSection">About</a></li>
                     <li><a href="#workSection">Work</a></li>
-                    <li><a href="#contactSection">Contact Me</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
                     <li><a
                             href="https://docs.google.com/document/d/1Paubk9ITOn2BVO14hvenIoLM5hRv8syY/edit?usp=sharing&ouid=103438086529795550959&rtpof=true&sd=true">Resume</a>
                     </li>
@@ -25,139 +26,76 @@
             </nav>
         </div>
     </header>
-    <div class="hero" role="img" alt="Bridge Elevation">
-        <h2 class="bottomRight">Tim Polo - RPEng</h2>
+    <div class="hero" role=" img" alt="Bridge Elevation">
+        <h2 class="nameClass customBorder">Tim Polo - RPEng</h2>
     </div>
 
-    <main>
-        <div class="mainDiv">
+    <main class="mainDiv w-100">
+        <section id="aboutMeSection" class="container-fluid w-100 mx-0 px-0">
+            <div class="row justify-content-between w-100 mx-0 my-0 customBorder">
 
-            <section id="aboutMeSection">
-                <div class="mainSection">
-                    <h2 class="aboutMeH2">About Me</h2>
-                    <div class="workDisplaySection">
+                <div class="col-9 p-2">
+                    <h2 class="w-100 px-1 text-white"> <u>About</u></h2>
 
-                        <p class=" mainParagraph"> Hi, I'm Tim. I'm an award winning Civil and Structural Design
-                            Engineer
-                            with previous experience in both the public and private sectors.
-                            <br>
-                            With 8 years experience, I have designed bridges, roads, houses, subdivisions, dams,
-                            retaining
-                            walls and more. <br>
-                            Most recently I have enrolled in the USYD-Trilogy Coding Bootcamp, to learn the basics of
-                            web
-                            development.
-                        </p>
-
-                        <img src="./assets/images/IPWEA Photo.png" alt="A headshot of Tim Polo" />
-
-                    </div>
+                    <p class="mainParagraph text-white"> Hi, I'm Tim. I'm an award winning Civil and Structural
+                        Design Engineer with previous experience in both the public and private sectors.
+                        <br>
+                        With 8 years experience, I have designed bridges, roads, houses, subdivisions, dams,
+                        retaining walls and more.
+                        <br>
+                        Most recently I have enrolled in the USYD-Trilogy Coding Bootcamp, to learn the basics of
+                        web development.
+                    </p>
                 </div>
-            </section>
-            <br>
-
-            <section id="workSection">
-                <div class="mainSection">
-                    <h2 class="mainH2">Work</h2>
-
-                    <div class="workDisplaySection">
-                        <!-- Lanes Bridge -->
-                        <div class="fullWidthDiv">
-                            <a
-                                href="https://www.nbnnews.com.au/2019/08/20/ribbon-cutting-marks-official-opening-of-new-lanes-bridge/">
-                                <img src="./assets/images/lanesBridge.jpg"
-                                    alt="A photo of a crane lifting concrete beams" />
-                                <div class="bottomLeft">
-                                    <strong class="bottomLeftStrong">Lanes Bridge</strong>
-                                    <br>
-                                    <span>Bowraville</span>
-                                </div>
-                            </a>
-
-
-                        </div>
-                        <!-- Other Projects -->
-                        <div class="fullWidthDiv">
-                            <div class="halfWidthDiv">
-                                <a
-                                    href="https://www.nbnnews.com.au/2020/06/17/largest-mobile-crane-used-in-bridge-build-at-tamban/">
-                                    <img src="./assets/images/Fischers Aerial.JPG"
-                                        alt="A drone shot looking down on a concrete bridge" />
-                                    <div class="bottomLeft">
-                                        <strong>Fischers Bridge</strong>
-                                        <br>
-                                        <span>Tamban</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="halfWidthDiv">
-                                <a
-                                    href="https://www.nbnnews.com.au/2019/06/22/new-jetty-walk-for-nambucca-heads-as-infrastructure-spend-continues/">
-                                    <img src="./assets/images/nambucca boardwalk.JPG"
-                                        alt="Photo of a timber boardwalk" />
-                                    <div class="bottomLeft">
-                                        <strong>Boardwalk</strong>
-                                        <br>
-                                        <span>Nambucca</span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="halfWidthDiv">
-                                <a
-                                    href="https://www.google.com/maps/place/3+Nyora+Cl,+Coffs+Harbour+NSW+2450/@-30.3052227,153.1065517,18.87z/data=!4m5!3m4!1s0x6b9c0e0af710ed7b:0x79cf4433a5d46d1b!8m2!3d-30.3052845!4d153.1068923">
-                                    <img src="./assets/images/3a nyora.jpg" alt="Front Elevation of a House" />
-                                    <div class="bottomLeft">
-                                        <strong>Residence</strong>
-                                        <br>
-                                        <span>3a Nyora Cl</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="halfWidthDiv">
-                                <a
-                                    href=" https://www.google.com/maps/place/3+Nyora+Cl,+Coffs+Harbour+NSW+2450/@-30.3052227,153.1065517,18.87z/data=!4m5!3m4!1s0x6b9c0e0af710ed7b:0x79cf4433a5d46d1b!8m2!3d-30.3052845!4d153.1068923">
-                                    <img src="./assets/images/3b Nyora Close Photo.JPG"
-                                        alt="View from an elevated house deck" />
-                                    <div class="bottomLeft">
-                                        <strong>Residence</strong>
-                                        <br>
-                                        <span>3b Nyora Cl</span>
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                        </div>
-
-
-                    </div>
+                <div class="col-3 p-2">
+                    <img class="w-100 float-right" src="./assets/images/IPWEA Photo.png" alt="A headshot of Tim Polo" />
                 </div>
-        </div>
-        </div>
+            </div>
+        </section>
+        <br>
+
+        <section id="workSection">
+            <div id="carouselBox" class="carousel slide w-90 customBorder" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active justify-content-center">
+                        <img id="carouselImg" class="d-block w-100" src="./assets/images/3a nyora.jpg" alt="Slide">
+                        <div class="text-white w-100 text-center">
+                            <h5><u id="projectTitle"></u></h5>
+                            <p id="projectDescription"></p>
+                        </div>
+                    </div>
+                    <button id="prevButton" class="carousel-control-prev customBorderL">
+                        ◀ Previous
+                    </button>
+                    <button id="nextButton" class="carousel-control-next customBorderR">
+                        Next ▶
+                    </button>
+
+                </div>
+
+            </div>
         </section>
         <br>
 
         <section id="contactSection">
-            <div class="mainSection">
-                <h2 class="aboutMeH2">Contact Me</h2>
-                <ul>
-                    <div class="fullWidthDivContact">
-                        <li>0449 646 713</li>
-                        <li>tim@nambuccaeng.com</li>
-                        <li><a href="https://www.nambuccaeng.com/">nambuccaeng.com</a></li>
-                        <li><a href="https://github.com/timp1990/">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/tim-polo-042ab11bb/">LinkedIn</a></li>
-                    </div>
+            <div class="d-inline-flex row justify-content-between w-100 mx-0 my-0 customBorder">
+                <h2 class="text-white px-1"><u>Contact</u></h2>
+                <ul class="d-inline-flex row justify-content-between w-100 mx-1 contactli text-white">
+                    <li>0449 646 713</li>
+                    <li>tim@nambuccaeng.com</li>
+                    <li><a href="https://www.nambuccaeng.com/">nambuccaeng.com</a></li>
+                    <li><a href="https://github.com/timp1990/">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/tim-polo-042ab11bb/">LinkedIn</a></li>
                 </ul>
             </div>
         </section>
-        </div>
 
     </main>
     <br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
 
 </body>
 
