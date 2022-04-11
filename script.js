@@ -1,8 +1,7 @@
 // Connect to HTML
-console.log('Running')
 var projectTitle = document.getElementById('projectTitle');
-
 var projectDescription = document.getElementById('projectDescription');
+var projectLink = document.getElementById('projectLink');
 //  Selects carousel element
 var carousel = document.getElementById("carouselBox");
 var carouselImg = document.getElementById('carouselImg');
@@ -14,11 +13,11 @@ var index = 0;
 var currentImage;
 
 var images = {
-    0: { file: "./assets/images/lanesBridge.jpg", project: 'Lanes Bridge', description: '60m x 10m x 10m Concrete Bridge' },
-    1: { file: "./assets/images/WeatherDashboard.JPG", project: 'Weather Dashboard', description: 'Enter a city for weather data' },
-    2: { file: "./assets/images/WorkdayScheduler.JPG", project: 'Workday Scheduler', description: 'A daily planner for a standard workday' },
-    3: { file: "./assets/images/Fischers Aerial.JPG", project: 'Fischers Bridge', description: '35m x 5m x 10m Concrete Bridge' },
-    4: { file: "./assets/images/3b Nyora Close Photo.JPG", project: 'Lanes Bridge', description: 'Coffs Harbour Residence' },
+    0: { file: "./assets/images/lanesBridge.jpg", project: 'Lanes Bridge', description: '60m x 10m x 10m Concrete Bridge', link: "https://www.nbnnews.com.au/2019/08/20/ribbon-cutting-marks-official-opening-of-new-lanes-bridge/" },
+    1: { file: "./assets/images/WeatherDashboard.JPG", project: 'Weather Dashboard', description: 'Enter a city for weather data', link: 'https://timp1990.github.io/Weather-Dashboard/', gitHub: "https://github.com/timp1990/Weather-Dashboard" },
+    2: { file: "./assets/images/WorkdayScheduler.JPG", project: 'Workday Scheduler', description: 'A daily planner for a standard workday', link: 'https://timp1990.github.io/Work-Day-Scheduler/', gitHub: "https://github.com/timp1990/Work-Day-Scheduler" },
+    3: { file: "./assets/images/Fischers Aerial.JPG", project: 'Fischers Bridge', description: '35m x 5m x 10m Concrete Bridge', link: "https://www.nbnnews.com.au/2020/06/17/largest-mobile-crane-used-in-bridge-build-at-tamban/" },
+    4: { file: "./assets/images/3b Nyora Close Photo.JPG", project: 'Lanes Bridge', description: 'Coffs Harbour Residence', link: "https://www.google.com/maps/place/3+Nyora+Cl,+Coffs+Harbour+NSW+2450/@-30.3052227,153.1065517,18.87z/data=!4m5!3m4!1s0x6b9c0e0af710ed7b:0x79cf4433a5d46d1b!8m2!3d-30.3052845!4d153.1068923" },
 };
 
 carouselImg.setAttribute('src', images[0]);
@@ -34,6 +33,14 @@ function navigate(direction) {
     carouselImg.setAttribute('src', images[index].file);
     projectTitle.textContent = images[index].project;
     projectDescription.textContent = images[index].description;
+    if (images[index].gitHub) {
+        projectLink.innerHTML = "<a href=" + images[index].link + "> Project Website </a><br>" + "<a href=" + images[index].gitHub + "> Project Git Repo </a>"
+
+    } else {
+        projectLink.innerHTML = "<a href=" + images[index].link + "> Project Website </a>"
+    }
+
+
 }
 
 // Clicking on image opens a new window containing the image
