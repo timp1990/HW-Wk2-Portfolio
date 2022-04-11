@@ -1,10 +1,10 @@
-# HW-Wk2-Portfolio
-Homework Activity Week 2 - Advanced CSS Portfolio
-# <My-Portfolio>
+# Portfolio
+My portfolio of work
+# <Portfolio>
 
 ## Site Link
 
-[www.myportfolio.com.au](https://timp1990.github.io/HW-Wk2-Portfolio/)
+[Live Portfolio Site Link](https://timp1990.github.io/Portfolio/)
 
 ## Description
 
@@ -17,7 +17,7 @@ To give future possible employers one place to view some of my key career projec
 - What problem does it solve: 
 It shows some of my best work to date.
 - What did you learn: 
-About "best practice" ways of positioning (flex etc) to make a robust and responsive website. About advanced CSS.
+About front end web development.
 
 
 ## Installation
@@ -30,7 +30,7 @@ No steps are required, the website is live and ready to view
 
 The website may be accessed via a web browser. 
 An example of the site is shown in the image below.
-![Example Site](assets/images/screenshot.png)
+![Example Site](./assets/images/screenshot.png)
 
 The items in the nav bar (in the tope right hand corner of the image above) may be clicked to scroll down to the appropriate part of the page.
 
