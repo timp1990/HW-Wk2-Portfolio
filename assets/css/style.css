@@ -83,7 +83,6 @@ img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-
 }
 
 
@@ -100,7 +99,7 @@ img {
 
 .nameClass {
     position: absolute;
-    top: 125px;
+    top: 325px;
     left: 0px;
     font-size: 1.25rem;
     height: 3rem;
