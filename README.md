@@ -36,6 +36,20 @@ The items in the nav bar (in the tope right hand corner of the image above) may 
 
 Clicking on the work images sends the user to news articles about the work, or an address of the work.
 
+Bootstrap uses flex-box to make the website responsive. 
+Bootstrap is linked in the head of the html file. 
+
+An image of the website on a small screen is shown below.
+
+![Mobile View](./assets/images/mobile%20screen%20snip.JPG)
+
+The Navbar flexes down to the next row when the screen shrinks
+![Mobile View](./assets/images/navbar%20snip.JPG)
+
+The projects are presented in a carousel. 
+The next project can be viewed by pressing on the right hand side of the carousel.
+![Mobile View](./assets/images/carousel%20area%20snip.JPG)
+
 ## Credits
 
 - Tim Polo
